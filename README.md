@@ -9,7 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Usage
+In didFinishLaunchingWithOptions method:
+```swift
+DefinitionAdvertising.shared.delegate = self
+DefinitionAdvertising.shared.configuration(appToken: API_KEY)
+```
 
 ## Installation
 
