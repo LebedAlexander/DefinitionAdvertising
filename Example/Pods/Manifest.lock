@@ -1,0 +1,16 @@
+PODS:
+  - DefinitionAdvertising (0.1.0)
+
+DEPENDENCIES:
+  - DefinitionAdvertising (from `../`)
+
+EXTERNAL SOURCES:
+  DefinitionAdvertising:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DefinitionAdvertising: 705f0f45d2fea52d80fbdadcac48c4cc1a026118
+
+PODFILE CHECKSUM: 1449fa8e5f4a8d3a945fb2ff04c085ce5ea5b19e
+
+COCOAPODS: 1.8.4

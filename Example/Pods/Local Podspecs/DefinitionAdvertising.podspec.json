@@ -1,0 +1,22 @@
+{
+  "name": "DefinitionAdvertising",
+  "version": "0.1.0",
+  "summary": "A short description of DefinitionAdvertising.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Admin/DefinitionAdvertising",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Admin": "revilosiz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Admin/DefinitionAdvertising.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DefinitionAdvertising/Classes/**/*"
+}

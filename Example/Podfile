@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DefinitionAdvertising_Tests' do
+  pod 'DefinitionAdvertising', :path => '../'
+  
+  
+end
