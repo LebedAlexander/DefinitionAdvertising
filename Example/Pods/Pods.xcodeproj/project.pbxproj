@@ -394,6 +394,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.3.0;
 				MODULEMAP_FILE = "Target Support Files/DefinitionAdvertising/DefinitionAdvertising.modulemap";
 				PRODUCT_MODULE_NAME = DefinitionAdvertising;
 				PRODUCT_NAME = DefinitionAdvertising;
@@ -549,6 +550,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.3.0;
 				MODULEMAP_FILE = "Target Support Files/DefinitionAdvertising/DefinitionAdvertising.modulemap";
 				PRODUCT_MODULE_NAME = DefinitionAdvertising;
 				PRODUCT_NAME = DefinitionAdvertising;

@@ -1,7 +1,7 @@
 import AdSupport
 
 //MARK: - Protocols
-protocol DefinitionAdvertisingDelegate {
+public protocol DefinitionAdvertisingDelegate {
     func definitionAttribution(isOrganic: Bool)
 }
 
@@ -14,7 +14,7 @@ open class DefinitionAdvertising: NSObject {
     public var delegate: DefinitionAdvertisingDelegate?
     
     //MARK: - Configuration
-    public func configuration(appToken: String, completion: @escaping (_ isOrganic: Bool)->()){
+    public func configuration(appToken: String){
         
         if let url = URL(string: "https://chksource.com/v1/conversion") {
             let json = ["idfa": ASIdentifierManager.shared().advertisingIdentifier.description, "app_token": appToken]
