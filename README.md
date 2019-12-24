@@ -17,12 +17,12 @@ DefinitionAdvertising is available through [CocoaPods](https://cocoapods.org). T
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DefinitionAdvertising'
+pod 'DefinitionAdvertising', :git => 'https://github.com/LebedAlexander/DefinitionAdvertising'
 ```
 
 ## Author
 
-Admin, revilosiz@gmail.com
+Lebed Alaxander, revilosiz@gmail.com
 
 ## License
 

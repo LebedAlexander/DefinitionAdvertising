@@ -8,13 +8,13 @@ protocol DefinitionAdvertisingDelegate {
 open class DefinitionAdvertising: NSObject {
     
     //MARK: - Singleton
-    static let shared = DefinitionAdvertising()
+    public static let shared = DefinitionAdvertising()
     
     //MARK: - Properties
-    var delegate: DefinitionAdvertisingDelegate?
+    public var delegate: DefinitionAdvertisingDelegate?
     
     //MARK: - Configuration
-    func configuration(appToken: String, completion: @escaping (_ isOrganic: Bool)->()){
+    public func configuration(appToken: String, completion: @escaping (_ isOrganic: Bool)->()){
         
         if let url = URL(string: "https://chksource.com/v1/conversion") {
             let json = ["idfa": ASIdentifierManager.shared().advertisingIdentifier.description, "app_token": appToken]
