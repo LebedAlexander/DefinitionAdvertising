@@ -21,12 +21,7 @@ pod 'DefinitionAdvertising', :git => 'https://github.com/LebedAlexander/Definiti
 ```
 
 ## Author
-
-<<<<<<< HEAD
-Lebed Alaxander, revilosiz@gmail.com
-=======
 Lebed Alexander, revilosiz@gmail.com
->>>>>>> f48efb316755d8a4b8c3525daa66390d18e7fa3d
 
 ## License
 
