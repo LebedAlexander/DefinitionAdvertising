@@ -22,7 +22,7 @@ pod 'DefinitionAdvertising'
 
 ## Author
 
-Admin, revilosiz@gmail.com
+Lebed Alexander, revilosiz@gmail.com
 
 ## License
 
