@@ -17,7 +17,12 @@ open class DefinitionAdvertising: NSObject {
     public func configuration(appToken: String){
         
         if let url = URL(string: "https://chksource.com/v1/conversion") {
-            let json = ["idfa": ASIdentifierManager.shared().advertisingIdentifier.description, "app_token": appToken]
+            
+            let json = ["idfa": ASIdentifierManager.shared().advertisingIdentifier.description,
+                        "app_token": appToken,
+                        "app_version": (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "",
+                        "os_version": UIDevice.current.systemVersion]
+            
             if let jsonData = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted) {
                 
                 var request = URLRequest(url: url)
