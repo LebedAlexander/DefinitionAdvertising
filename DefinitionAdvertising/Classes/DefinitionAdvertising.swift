@@ -34,7 +34,7 @@ open class DefinitionAdvertising: NSObject {
                     if let error = error{
                         print(error.localizedDescription)
                     }else{
-                        if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: AnyObject]{
+                        if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: AnyObject], json["attributed"] != nil{
                             if let attributed = json["attributed"] as? Bool{
                                 self.delegate?.definitionAttribution(isOrganic: attributed)
                             }
