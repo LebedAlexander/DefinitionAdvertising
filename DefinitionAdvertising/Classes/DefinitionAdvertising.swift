@@ -35,7 +35,9 @@ open class DefinitionAdvertising: NSObject {
                         print(error.localizedDescription)
                     }else{
                         if let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: AnyObject]{
-                            self.delegate?.definitionAttribution(isOrganic: (json["attributed"] as! Bool) ? false : true)
+                            if let attributed = json["attributed"] as? Bool{
+                                self.delegate?.definitionAttribution(isOrganic: attributed)
+                            }
                         }
                     }
                 }.resume()

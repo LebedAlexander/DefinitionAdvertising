@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/alex/Desktop/DefinitionAdvertising/Example/build/Debug-iphonesimulator/DefinitionAdvertising/DefinitionAdvertising.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/alex/Desktop/DefinitionAdvertising/Example/build/Pods.build/Debug-iphonesimulator/DefinitionAdvertising.build/unextended-module.modulemap",
+    }]
+  }]
+}
