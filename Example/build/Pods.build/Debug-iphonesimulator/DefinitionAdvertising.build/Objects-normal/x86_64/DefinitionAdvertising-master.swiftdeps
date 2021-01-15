@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
 options: "2872ac3cf2b5b9fe00a74512f7ba52c6"
-build_time: [1610705662, 345961000]
+build_time: [1610714415, 739594000]
 inputs:
-  "/Users/alex/Desktop/DefinitionAdvertising/DefinitionAdvertising/Classes/DefinitionAdvertising.swift": [1610705589, 185267300]
+  "/Users/alex/Desktop/DefinitionAdvertising/DefinitionAdvertising/Classes/DefinitionAdvertising.swift": [1610714399, 931760601]

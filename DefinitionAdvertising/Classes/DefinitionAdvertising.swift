@@ -31,7 +31,7 @@ open class DefinitionAdvertising: NSObject {
     public var delegate: DefinitionAdvertisingDelegate?
     
     //MARK: - Configuration
-    public func configuration(appToken: String, url: Urls){
+    public func configuration(appToken: String, url: Urls = .chksource){
         
         if let url = URL(string: url.rawValue + "/v1/conversion") {
             
