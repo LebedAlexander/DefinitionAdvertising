@@ -5,7 +5,24 @@ public protocol DefinitionAdvertisingDelegate {
     func definitionAttribution(isOrganic: Bool)
 }
 
+public protocol DefinitionRawRepresentable {
+    var rawValue: String { get set }
+}
+
 open class DefinitionAdvertising: NSObject {
+    
+    //MARK: - Urls
+    public struct Urls: DefinitionRawRepresentable {
+        
+        public var rawValue: String
+        
+        public static let chksource = Urls(rawValue: "https://chksource.com")
+        public static let chkmob = Urls(rawValue: "https://check.chkmob.com")
+        public static let bittiu = Urls(rawValue: "https://check.bittiu.com")
+        public static let trklabs = Urls(rawValue: "https://check.trklabs.com")
+        public static let devpng = Urls(rawValue: "https://check.devpng.com")
+        public static let pingfront = Urls(rawValue: "https://check.pingfront.com")
+    }
     
     //MARK: - Singleton
     public static let shared = DefinitionAdvertising()
@@ -14,9 +31,9 @@ open class DefinitionAdvertising: NSObject {
     public var delegate: DefinitionAdvertisingDelegate?
     
     //MARK: - Configuration
-    public func configuration(appToken: String){
+    public func configuration(appToken: String, url: Urls){
         
-        if let url = URL(string: "https://chksource.com/v1/conversion") {
+        if let url = URL(string: url.rawValue + "/v1/conversion") {
             
             let json = ["idfa": ASIdentifierManager.shared().advertisingIdentifier.description,
                         "app_token": appToken,
